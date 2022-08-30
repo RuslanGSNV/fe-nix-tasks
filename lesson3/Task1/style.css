@@ -1,0 +1,32 @@
+body{
+    
+    background-image: url(./background.jpg);
+}
+
+p{
+    width: 500px;
+    height: 100px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.text_color_hex {
+    color: #1dccbd;
+}
+.text_color_name {
+    color: goldenrod;
+}
+.text_color_rgb {
+    color: rgb(184, 4, 118);
+}
+.text_color_hsl {
+    color: hsl(136, 96%, 41%);
+}
+.text_color_rgb-alfa{
+    color: rgba(15, 7, 166,0.8);
+}
+
+.text_color_hsl-alfa{
+    color:hsla(305, 97%, 56%, 0.6) ;
+}

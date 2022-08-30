@@ -1,0 +1,49 @@
+/*********** General **************/
+table{
+    border-spacing: 0;
+}
+
+td{
+    width: 70px;
+    height: 70px;
+}
+
+/************ Backgrounds **************/
+
+.blue_element{
+    background-color: blue;
+}
+
+.red_element{
+    background-color:red;
+}
+
+/************ Rounding **************/
+
+.dot{
+    border-radius: 50%;
+}
+
+.top_edge_blue{
+    border-radius: 50% 50% 0 0;
+}
+
+.bottom_edge_blue{
+    border-radius: 0 0 50% 50%;
+}
+
+.top_edge_red{
+    border-radius: 40% 0 0 0;
+}
+
+.bottom_edge_red{
+    border-radius: 0 0 0 40%;
+}
+
+.right_top_red{
+    border-radius: 0 50% 50% 0;
+}
+
+.right_bottom_red{
+    border-radius: 0 50% 50% 0;
+}

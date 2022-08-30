@@ -1,0 +1,6 @@
+div{
+    width: 300px;
+    height: 200px;
+    background: black url(./w3c.jpg) round;
+    background-size: 25%;
+}
