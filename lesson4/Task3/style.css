@@ -1,0 +1,37 @@
+body{
+    color: white;
+}
+
+.red_element{
+    float: left;
+    width: 30%;
+}
+
+.container_large{
+    margin-left: 30%;
+}
+
+.blue_element{
+    float: right;
+    width: 30%;
+}
+
+.container_small{
+    margin-right: 30%;
+}
+
+.pink_element {
+    float: right;
+    width: 30%;
+}
+
+.aqua_element {
+    float: left;
+    width: 30%;
+}
+
+.yellow_element {
+    margin-left: 30%;
+    margin-right: 30%;
+
+}

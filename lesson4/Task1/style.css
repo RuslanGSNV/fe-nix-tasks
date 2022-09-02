@@ -1,0 +1,11 @@
+div{
+    border: 1px solid black;
+    width: 10%;
+}
+
+.left_floated {
+    float: left;
+}
+.right_floated {
+    float: right;
+}

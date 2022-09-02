@@ -1,0 +1,14 @@
+li{
+    list-style: none;
+}
+
+.hide{
+    background-color: red;
+    display: none;
+}
+
+.triger:hover .hide{
+    display:list-item;
+    list-style: none;
+}
+
