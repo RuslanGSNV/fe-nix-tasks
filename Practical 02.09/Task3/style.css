@@ -1,0 +1,26 @@
+div{
+    border: 2px solid black;
+    margin: 20px;
+}
+
+.container {
+    width: 700px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.flex-item1 {
+    align-self: flex-start;
+}
+.flex-item2 {
+    align-self: center;
+}
+.flex-item3 {
+    align-self: stretch;
+}
+.flex-item4 {
+    align-self: center;
+}
+.flex-item5 {
+    align-self: flex-end;
+}
