@@ -1,0 +1,57 @@
+
+/*__________________Mobile___________________*/
+*{
+    box-sizing: border-box;
+}
+
+div{
+    border: 2px solid black;
+}
+
+/*__________________Tablet___________________*/
+
+@media(min-device-width:768px) {
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .left_floated {
+        float: left;
+        width: 25%;
+    }
+    .right_floated {
+        float: right;
+        width: 25%;
+       
+    }
+
+    .central  {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+/*__________________Desktop___________________*/
+
+@media(min-device-width:992px){
+    *{
+        box-sizing: border-box;
+    }
+
+    .left_floated {
+        float: left;
+        width: 20%;
+    }
+
+    .right_floated {
+        float: right;
+        width: 20%;
+    }
+
+    .central  {
+        width: 50%;
+        margin: 0 auto;  
+    }
+}

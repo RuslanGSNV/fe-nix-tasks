@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    min-width: 400px; /*500px*/ /*600px*/
+    max-width: 600px;
+}
+
+
+[class|="flex-item"]{
+    flex-basis: 111.5px;
+}
+
+.shrink{
+    flex-shrink: 10;
+}
+
+.grow{
+    flex-grow: 1;
+}
+
+
