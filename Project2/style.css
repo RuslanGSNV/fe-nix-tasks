@@ -170,8 +170,7 @@ body{
 
             .products__tabs .products__link.active {
                 color: black;
-                background-color: rgb(148, 182, 253);
-                
+                background-color: rgb(206 219 247);
                 font-weight: bold;
 
             }
@@ -180,6 +179,7 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                background-color: rgb(206 219 247);
             }
 
 
@@ -327,6 +327,7 @@ body{
                 .tab-content>.active {    /*   This selector is equal to .products__box   */
                     display: flex;
                     flex-direction: row;
+                    background-color: rgb(206 219 247);
                 }
 
                 .products__item{
@@ -366,8 +367,7 @@ body{
                 
                 .products__tabs .products__link.active {
                     color: black;
-                    background-color: rgb(148, 182, 253);
-                    
+                    background-color: rgb(206 219 247);
                     font-weight: bold;
     
                 }
