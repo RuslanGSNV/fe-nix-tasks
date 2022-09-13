@@ -187,7 +187,8 @@ body{
 
 
     .contacts{
-        padding: 30px;
+        padding: 15px;
+        padding-top: 20px;
         background: white;
         display: flex;
         flex-direction: column;
@@ -198,12 +199,12 @@ body{
                     list-style: none;
                 }
                 .contacts__text{
-                    width: 80%;
+                    width: 90%;
                     text-align: justify;
                 }
 
                 .contacts__contact-data{
-                    width: 80%;
+                    width: 90%;
                 }
 
                 .contacts__contact-data h4{
