@@ -27,7 +27,7 @@ body{
 
 
 .Header {
-    height: 100px;
+    height: 60px;
     background:rgb(104, 104, 236) ;
     display: flex;
     flex-direction: row;
@@ -125,7 +125,7 @@ body{
 @media(max-width:767px) and (orientation:landscape){
     
     .Header {
-        height: 100px;
+        height: 60px;
         background:rgb(104, 104, 236) ;
         display: flex;
         flex-direction: row;
