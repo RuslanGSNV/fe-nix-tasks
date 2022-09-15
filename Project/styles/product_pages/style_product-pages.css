@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url(style_product-pages-tablet.css);
+@import url(style_product-pages-desctop.css);
+
+
+*{  
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*-------------------------------------------------------Mobiles-----------------------------------------------------------*/
+
+/*-------------------------------------------------------Portrait----------------------------------------------------------*/
+
+
+@media(max-width:767px) and (orientation:portrait){
+
+
+
+.Header {
+    height: 60px;
+    background:rgb(104, 104, 236) ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+            .Header__head-box{
+                display: flex;
+                align-items: center;
+                height: 100%;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .Header__head-box_logo{
+                height: 80%;
+            }
+
+            .Header__head-box_headline{
+                display: block;
+                margin-top: 10px;
+                font-size: 1.7em;
+                color: gold;
+                text-shadow: 2px 2px 2px grey;
+            }
+
+.Order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206 219 247);
+    padding: 40px;
+}
+
+            .Order__product{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                background-color: white;
+                border: 2px solid lightgray;
+                width: 100%;
+                padding: 30px;
+                margin-bottom: 20px;
+            }
+
+                    .Order__product img{
+                        width: 80%;
+                    }
+
+                    .Order_headline{
+                        font-size: 24px;
+                    }
+
+.Order__form{
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    border: 2px solid lightgray;
+}
+
+.footer{
+    padding: 20px;
+    background-color: rgb(104, 104, 236);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+            .footer__info-block li{
+                cursor: pointer;
+                list-style:none inside;
+                font-size: 14px;
+            }
+                    
+
+            .footer__info-block a{
+                color: white;
+                text-decoration: none;
+            }
+
+                        .footer__info-block a:hover{
+                            text-decoration: underline;
+                        }
+
+}      
+
+/*-------------------------------------------------------------Landscape------------------------------------------------------------*/
+
+@media(max-width:767px) and (orientation:landscape){
+    
+    .Header {
+        height: 60px;
+        background:rgb(104, 104, 236) ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+                .Header__head-box{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+    
+                .Header__head-box_logo{
+                    height: 80%;
+                }
+        
+                .Header__head-box_headline{
+                    display: block;
+                    margin-top: 10px;
+                    font-size: 1.7em;
+                    color: gold;
+                    text-shadow: 2px 2px 2px grey;
+                }
+    
+    .Order{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(206 219 247);
+        padding: 20px;
+    }
+    
+                .Order__product{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: white;
+                    border: 2px solid lightgray;
+                    width: 40%;
+                    padding: 30px;
+                    
+                }
+        
+                        .Order__product img{
+                            width: 80%;
+                        }
+        
+                        .Order_headline{
+                            font-size: 24px;
+                        }
+    
+    .Order__form{
+        padding: 20px;
+        width: 60%;
+        background-color: white;
+        margin-left: 20px;
+        border: 2px solid lightgray;
+    }
+    
+    
+    .footer{
+        padding: 20px;
+        background-color: rgb(104, 104, 236);
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+    }
+                .footer__info-block li{
+                    cursor: pointer;
+                    list-style:none inside;
+                    font-size: 14px;
+                                }
+                        
+
+                .footer__info-block a{
+                    color: white;
+                    text-decoration: none;
+                }
+
+                            .footer__info-block a:hover{
+                                text-decoration: underline;
+                            }
+    
+    }      
