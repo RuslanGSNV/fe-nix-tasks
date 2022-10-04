@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <table id="table">
+            aaa
+            <tr> <td>Тест</td> </tr>
+        </table>
+        
+        <script>
+            alert(table); // таблиця, як і має бути
+            table.remove(); // Чому в документі залишився текст "ааа"?
+            // Якщо відкрити в інструментах розробника вкладку з елементами сторінки, можна побачити, що текст ааа стоїть перед елементом table,
+            // це тому, що таблиця не може містити звичайний текст, вона має містити рядки та комірки, тому браузер автоматично це виправив перемістивши текст ааа в тіло body перед таблицею
+        </script>
+</body>
+</html>

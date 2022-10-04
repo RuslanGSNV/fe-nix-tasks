@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert(document.body.lastChild.nodeType);
+        // Не дивлячись на те, що останнім дочірнім в середині body є текст, виведе саме 1 а не 3,
+        // тому що на момент виконання скрипта сторінка не завантажилась до кінця,
+        // тому останніи дочірнім скрипт бачить себе, а скрипт - це є елемент, тому 1.
+    </script>
+</body>
+</html>

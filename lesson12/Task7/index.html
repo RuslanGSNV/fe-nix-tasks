@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. document являэться обьектом класу HTMLDocument, для перевірки можна в консолі браузера можна застосувата:
+        document.constructor.name; //HTMLDocument
+        // 2. Оскільки ми знаємо, що успадкування грунтується на прототипах, можемо за допомогою посилання __proto__ піти по ієрархії класві і дізнатися у консолі браузера:
+        HTMLDocument.prototype.constructor.name; // HTMLDocument
+        HTMLDocument.prototype.__proto__.constructor.name; //Document
+        HTMLDocument.prototype.__proto__.__proto__.constructor.name; // Node
+        HTMLDocument.prototype.__proto__.__proto__.__proto__.constructor.name; // EventTarget
+        // Якщо вважати EventTarget коренем ієрархії, то document посідає 4 місце у DOM-ієрархії
+
+        // 3. Із попереднього питання ми дізналися, що document успадковуєт від Node:
+        HTMLDocument.prototype.__proto__.__proto__.constructor.name; // Node
+    </script>
+</body>
+</html>
