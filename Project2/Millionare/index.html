@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millionare</title>
+    <link rel="shortcut icon" type="image/png" href="./icons/millionaire.png">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="millionaire">
+
+        <header class="millionaire__header">
+            <img class="millionaire__header_image" src="./icons/millionaire.jpg" alt="">
+            <h1>Хто хоче стати міліонером?</h1>
+        </header>
+
+
+
+        <div id="welcome" class="millionaire__welcome">
+            <p>
+                Ми раді Вас вітати в онлайн версії популярного телешоу “Перший мільйон”. Ви маєте можливість відчути себе реальним учасником телегри абсолютно безкоштовно. Гра завоювала серця мільйонів відданих фанатів у всьому світі, і у Вас є унікальна можливість в реальному часі спробувати свої сили і стати головним героєм цього шоу!
+                Весело, безтурботно провести час можливо, відповідаючи на серію цікавих питань на логіку і інтелект. Вам буде цікаво перевірити свої розумові можливості, використовуючи всі свої знання в різноманітних галузях.
+                Гра має 15 тестових питань. З підвищенням рівня складності, збільшуються і Ваші шанси отримати набагато більше грошей. Відповівши правильно на перший блок запитань, Ви зможете отримати від 100 до 1000 гривень. В процесі гри, сума Вашого виграшу буде збільшуватися за кожну вірну відповідь. А правильна відповідь на головне фінальне питання подарує Вам один мільйон гривень!
+                Заробити свій перший мільйон гривень можна дуже швидко і легко! Використовуйте всі ваші знання, і Ви зможете отримати головний приз! Запорукою вашого неймовірного успіху є тільки Ваш інтелект!
+            </p>
+
+            <input id="enter_name" type="text" placeholder="Як вас звати?">
+            <div id="no_name">Введіть, будь-ласка, ім'я, нам важливо знати, як до вас звертатися.</div>
+            <button id="play" type="button">Розпочати!</button>
+        </div>
+    
+
+
+        <div id="game" class="millionaire__game">
+
+            <aside id="score" class="millionaire__game_score">
+                <div>1. ₴ 100</div>
+                <div>2. ₴ 200</div>
+                <div>3. ₴ 300</div>
+                <div>4. ₴ 500</div>
+                <div><span>5. ₴ 1 000</span></div>
+                <div>6. ₴ 2 000</div>
+                <div>7. ₴ 4 000</div>
+                <div>8. ₴ 8 000</div>
+                <div>9. ₴ 16 000</div>
+                <div><span>10. ₴ 32 000</span></div>
+                <div>11. ₴ 64 000</div>
+                <div>12. ₴ 125 000</div>
+                <div>13. ₴ 250 000</div>
+                <div>14. ₴ 500 000</div>
+                <div><span>15. ₴ 1 000 000</span></div>
+            </aside>
+
+            <div class="millionaire__game_game-box">
+                <div id="hints" class="millionaire__game_hints">
+                    <div class="hint fifty">50:50</div>
+                    <div class="hint phone"></div>
+                </div>
+
+                <div id="timer" class="millionaire__game_timer"></div>
+
+                <div class="millionaire__game_emblem">
+                    <img src="./icons/millionaire.png" alt="">
+                </div>
+
+                <div id="question" class="millionaire__game_question"></div>
+                
+                <div id="answers" class="millionaire__game_answers">
+                    <div class="answer"></div>
+                    <div class="answer"></div>
+                    <div class="answer"></div>
+                    <div class="answer"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="popup" class="popup">
+        <div class="popup_body">
+            <div class="popup_content">
+                <a id="close" class="popup_close">X</a>
+                <div class="popup_title">Повідомлення:</div>
+                <div id="popup_content" class="popup_text">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
