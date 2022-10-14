@@ -73,7 +73,7 @@ calculator.addEventListener('click',function(event){
     let key = event.target.id;
     if (key === 'equal'){
         calculate();
-        output.textContent = finalResult.toFixed(2);
+        output.textContent = finalResult.toFixed(9);
         operator = '';
         activeOperator = false;
     } else {
