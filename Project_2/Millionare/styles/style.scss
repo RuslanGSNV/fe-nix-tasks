@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@media (min-width:847px){/*___________PC-Screen+___________________________________________________________________________________________________________________________________________________________*/
+    .millionaire{
+
+        .millionaire__header{
+            display: flex;
+            height: 120px;
+            justify-content: center;
+            background: linear-gradient(0deg, rgba(113,3,116,1) 0%, rgba(73,5,125,1) 68%);
+            border: 2px solid gray;
+            
+            h1{
+                margin-top: 35px;
+                margin-left: 20px;
+                color:gold;
+                text-shadow: 2px 2px black;
+                font-size: 40px;
+                font-weight: 700;
+            }   
+        }
+
+        .millionaire__welcome{
+            background: linear-gradient(0deg, rgba(71,5,125,1) 51%, rgba(132,96,135,1) 100%);
+            height: 900px;
+            padding: 30px;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+    
+            p{
+                color: white;
+                font-size:1.5em;
+                width: 80%;
+                text-shadow: 1px 1px black;
+                text-align: justify;
+                margin: 0 auto;
+            }
+
+            input{
+                width: 40%;
+                height: 40px;
+                font-size: 22px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 100px;
+                margin-bottom: 10px;
+            }
+
+            div{
+                margin: 0 auto;
+                color: red;
+                text-shadow: 1px 1px black;
+                margin-bottom: 10px;
+                display: none;
+
+            }
+
+            button{
+                height: 50px;
+                width: 200px;
+                font-size: 22px;
+                display: block;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+        }
+
+        .millionaire__game{
+            background: linear-gradient(0deg, rgba(71,5,125,1) 51%, rgba(132,96,135,1) 100%);
+            height: 900px;
+            padding: 40px;
+            padding-top: 80px;
+            display: none;
+
+            .millionaire__game_score{
+                display: flex;
+                height: 600px;
+                width: 30%;
+                flex-direction: column-reverse;
+                color: orange;
+                font-size: 22px;
+                text-shadow: 1px 1px black;
+
+                div{
+                    width: 70%;
+                    height: 35px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding-left: 10px;
+                }
+
+                span{
+                    color: white;
+                    
+                }
+            }
+
+            .millionaire__game_game-box{
+                width: 70%;
+                height: 600px;
+                
+
+                .millionaire__game_hints{
+                    margin: 0 auto;
+                    width: 200px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 40px;
+                        border-radius: 20px;
+                        box-shadow: 3px 3px 3px rgb(66, 66, 66);
+                        cursor: pointer;
+                    }
+                    .fifty{
+                        background: orange;
+                        
+                    }
+
+                    .phone{
+                        background: url('../icons/phone.png') orange no-repeat center;
+                    }
+
+                    div:active{
+                        box-shadow: 1px 1px 2px rgb(66, 66, 66);
+                        margin-left: 3px;
+                        margin-top: 3px;
+                        transition: 0.1s;
+                    }
+                }
+
+                .millionaire__game_timer{
+                    height: 70px;
+                    width: 70px;
+                    background: orange;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                    color: white;
+                    text-shadow: 1px 1px black;
+                    box-shadow: 3px 3px 3px rgb(66, 66, 66);
+                }
+
+
+                .millionaire__game_emblem{
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    img{
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 4px rgb(66, 66, 66);
+                        animation: spin 10s linear 0s infinite ;
+                    }
+                }
+
+                .millionaire__game_question{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                    color: white;
+                    text-shadow: 1px 1px black;
+                    border: 3px solid black;
+                    width: 100%;
+                    height: 50px;
+                    padding: 35px;
+                    background-color: orange;
+                    border-radius: 30px;
+                    box-shadow: 2px 2px 3px rgb(48, 47, 47);
+                   
+                }
+                
+                .millionaire__game_answers{
+                    margin-top: 20px;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows:50px 50px ;
+                    grid-row-gap: 1em;
+                    grid-column-gap: 1em;
+
+                    .answer{
+                        
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        padding-left: 40px;
+                        color: white;
+                        font-size: 22px;
+                        text-shadow: 1px 1px black;
+                        background-color: orange;
+                        border-radius: 30px;
+                        box-shadow: 4px 4px 3px rgb(100, 81, 100);
+                        transition: 0.2s;
+                        cursor: pointer;
+                    }
+
+                    .answer:active{
+                        margin-left: 3px;
+                        margin-top: 3px;
+                        box-shadow: 1px 1px 2px rgb(100, 81, 100);
+                        transition: 0.1s;
+                    }                  
+                    
+                }
+            }
+        }
+    }
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    text-shadow: 1px 1px rgb(177, 175, 175);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+    .popup_body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        
+        
+        .popup_content {
+            background-color: white;
+            color: black;
+            max-width: 900px;
+            padding: 30px;
+            position: relative;
+            border-radius: 10px;
+            .popup_close {
+                position: absolute;
+                cursor: pointer;
+                right: 10px;
+                top: 10px;
+                font-size: 20px;
+                color: red;
+                text-decoration: none;
+
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .popup_title {
+                font-size: 30px;
+                margin: 0px 0px 1em 0px;
+            }
+            
+        }
+        
+    }   
+  }
+}
+
+@media(min-width:651px) and (max-width:846px){/*____Tablet-PC-Screen__________________________________________________________________________________________________________________________________________________________________*/
+    .millionaire{
+
+        .millionaire__header{
+            display: flex;
+            height: 120px;
+            justify-content: center;
+            background: linear-gradient(0deg, rgba(113,3,116,1) 0%, rgba(73,5,125,1) 68%);
+            border: 2px solid gray;
+            
+            h1{
+                margin-top: 35px;
+                margin-left: 10px;
+                color:gold;
+                text-shadow: 2px 2px black;
+                font-size: 32px;
+                font-weight: 700;
+            }   
+        }
+
+        .millionaire__welcome{
+            background: linear-gradient(0deg, rgba(71,5,125,1) 51%, rgba(132,96,135,1) 100%);
+            padding: 30px;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+    
+            p{
+                color: white;
+                font-size:1.5em;
+                width: 80%;
+                text-shadow: 1px 1px black;
+                text-align: justify;
+                margin: 0 auto;
+            }
+
+            input{
+                width: 40%;
+                height: 40px;
+                font-size: 22px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 100px;
+                margin-bottom: 10px;
+            }
+
+            div{
+                margin: 0 auto;
+                color: red;
+                text-shadow: 1px 1px black;
+                margin-bottom: 10px;
+                display: none;
+
+            }
+
+            button{
+                height: 50px;
+                width: 200px;
+                font-size: 22px;
+                display: block;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+        }
+
+
+
+        .millionaire__game{
+            background: linear-gradient(0deg, rgba(71,5,125,1) 51%, rgba(132,96,135,1) 100%);
+            padding: 40px;
+            padding-top: 80px;
+            display: none;
+            flex-direction: column-reverse;
+            align-items: center;
+
+
+            .millionaire__game_score{
+                display: flex;
+                height: 600px;
+                width: 100%;
+                flex-direction: column-reverse;
+                color: orange;
+                font-size: 22px;
+                text-shadow: 1px 1px black;
+
+                div{
+                    width: 40%;
+                    height: 35px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding-left: 10px;
+                }
+
+                span{
+                    color: white;
+                    
+                }
+            }
+
+            .millionaire__game_game-box{
+                width: 100%;
+                height: 600px;
+                
+
+                .millionaire__game_hints{
+                    margin: 0 auto;
+                    width: 200px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 40px;
+                        border-radius: 20px;
+                        box-shadow: 3px 3px 3px rgb(66, 66, 66);
+                        cursor: pointer;
+                    }
+                    .fifty{
+                        background: orange;
+                        
+                    }
+
+                    .phone{
+                        background: url('../icons/phone.png') orange no-repeat center;
+                    }
+
+                    div:active{
+                        box-shadow: 1px 1px 2px rgb(66, 66, 66);
+                        margin-left: 3px;
+                        margin-top: 3px;
+                        transition: 0.1s;
+                    }
+                }
+
+                .millionaire__game_timer{
+                    height: 70px;
+                    width: 70px;
+                    background: orange;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                    color: white;
+                    text-shadow: 1px 1px black;
+                    box-shadow: 3px 3px 3px rgb(66, 66, 66);
+                }
+
+                .millionaire__game_emblem{
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    img{
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 4px rgb(66, 66, 66);
+                        animation: spin 10s linear 0s infinite ;
+                    }
+                }
+
+                .millionaire__game_question{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                    color: white;
+                    text-shadow: 1px 1px black;
+                    border: 3px solid black;
+                    width: 100%;
+                    height: 50px;
+                    padding: 35px;
+                    background-color: orange;
+                    border-radius: 30px;
+                    box-shadow: 2px 2px 3px rgb(48, 47, 47);
+                   
+                }
+                
+                .millionaire__game_answers{
+                    margin-top: 20px;
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows:50px 50px ;
+                    grid-row-gap: 1em;
+                    grid-column-gap: 1em;
+
+                    .answer{
+                        
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        padding-left: 40px;
+                        color: white;
+                        font-size: 22px;
+                        text-shadow: 1px 1px black;
+                        background-color: orange;
+                        border-radius: 30px;
+                        box-shadow: 4px 4px 3px rgb(100, 81, 100);
+                        transition: 0.2s;
+                        cursor: pointer;
+                    }
+
+                    .answer:active{
+                        margin-left: 3px;
+                        margin-top: 3px;
+                        box-shadow: 1px 1px 2px rgb(100, 81, 100);
+                        transition: 0.1s;
+                    }                  
+                    
+                }
+            }
+        }
+    }
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    text-shadow: 1px 1px rgb(177, 175, 175);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+    .popup_body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        
+        
+        .popup_content {
+            background-color: white;
+            color: black;
+            width: 70%;
+            max-width: 900px;
+            padding: 30px;
+            position: relative;
+            border-radius: 10px;
+            .popup_close {
+                position: absolute;
+                cursor: pointer;
+                right: 10px;
+                top: 10px;
+                font-size: 20px;
+                color: red;
+                text-decoration: none;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .popup_title {
+                font-size: 30px;
+                margin: 0px 0px 1em 0px;
+            }
+            
+        }
+        
+    }   
+  }
+}
+
+@media (max-width:650px){/*___Mobile-Tablet-Screen___________________________________________________________________________________________________________________________________________________________________*/
+    .millionaire{
+
+        .millionaire__header{
+            display: flex;
+            height: 120px;
+            justify-content: center;
+            background: linear-gradient(0deg, rgba(113,3,116,1) 0%, rgba(73,5,125,1) 68%);
+            border: 2px solid gray;
+            
+            img{
+                display: none;
+            }
+
+            h1{
+                margin-top: 25px;
+                margin-left: 10px;
+                color:gold;
+                text-shadow: 2px 2px black;
+                font-size: 32px;
+                font-weight: 700;
+            }   
+        }
+
+        .millionaire__welcome{
+            background: linear-gradient(0deg, rgba(71,5,125,1) 51%, rgba(132,96,135,1) 100%);
+            padding: 10px;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+    
+            p{
+                color: white;
+                font-size:1em;
+                width: 80%;
+                text-shadow: 1px 1px black;
+                text-align: justify;
+                margin: 0 auto;
+            }
+
+            input{
+                width: 65%;
+                height: 40px;
+                font-size: 22px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 60px;
+                margin-bottom: 10px;
+            }
+
+            div{
+                margin: 0 auto;
+                color: red;
+                text-shadow: 1px 1px black;
+                margin-bottom: 10px;
+                display: none;
+
+            }
+
+            button{
+                height: 50px;
+                width: 200px;
+                font-size: 22px;
+                display: block;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+        }
+
+
+
+        .millionaire__game{
+            background: linear-gradient(0deg, rgba(71,5,125,1) 51%, rgba(132,96,135,1) 100%);
+            padding: 10px;
+            padding-top: 80px;
+            display: none;
+            flex-direction: column-reverse;
+            align-items: center;
+
+
+            .millionaire__game_score{
+                display: flex;
+                margin-top: 230px;
+                width: 100%;
+                flex-direction: column;
+                color: orange;
+                font-size: 22px;
+                text-shadow: 1px 1px black;
+
+                div{
+                    width: 75%;
+                    height: 35px;
+                    padding: 10px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding-left: 10px;
+                }
+
+                span{
+                    color: white;
+                    
+                }
+            }
+
+            .millionaire__game_game-box{
+                width: 100%;
+                height: 600px;
+                
+
+                .millionaire__game_hints{
+                    margin: 0 auto;
+                    width: 200px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: space-around;
+
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 40px;
+                        border-radius: 20px;
+                        box-shadow: 3px 3px 3px rgb(66, 66, 66);
+                        cursor: pointer;
+                    }
+                    .fifty{
+                        background: orange;
+                        
+                    }
+
+                    .phone{
+                        background: url('../icons/phone.png') orange no-repeat center;
+                    }
+
+                    div:active{
+                        box-shadow: 1px 1px 2px rgb(66, 66, 66);
+                        margin-left: 3px;
+                        margin-top: 3px;
+                        transition: 0.1s;
+                    }
+                }
+
+                .millionaire__game_timer{
+                    height: 70px;
+                    width: 70px;
+                    background: orange;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                    color: white;
+                    text-shadow: 1px 1px black;
+                    box-shadow: 3px 3px 3px rgb(66, 66, 66);
+                }
+
+                .millionaire__game_emblem{
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    img{
+                        border-radius: 50%;
+                        height: 70%;
+                        box-shadow: 0px 0px 4px rgb(66, 66, 66);
+                        animation: spin 10s linear 0s infinite ;
+                    }
+                }
+
+                .millionaire__game_question{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 18px;
+                    color: white;
+                    text-shadow: 1px 1px black;
+                    border: 3px solid black;
+                    width: 100%;
+                    height: 60px;
+                    padding: 45px;
+                    background-color: orange;
+                    border-radius: 30px;
+                    box-shadow: 2px 2px 3px rgb(48, 47, 47);
+                }
+                
+                .millionaire__game_answers{
+                    margin-top: 20px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .answer{
+                        height: 50px;
+                        margin-bottom: 20px;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        padding-left: 40px;
+                        color: white;
+                        font-size: 18px;
+                        text-shadow: 1px 1px black;
+                        background-color: orange;
+                        border-radius: 30px;
+                        box-shadow: 4px 4px 3px rgb(100, 81, 100);
+                        transition: 0.2s;
+                        cursor: pointer;
+                    }
+
+                    .answer:active{
+                        margin-left: 3px;
+                        margin-top: 3px;
+                        box-shadow: 1px 1px 2px rgb(100, 81, 100);
+                        transition: 0.1s;
+                    }                  
+                }
+            }
+        }
+    }
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    text-shadow: 1px 1px rgb(177, 175, 175);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+
+    .popup_body {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        
+        
+        .popup_content {
+            background-color: white;
+            color: black;
+            width: 70%;
+            max-width: 900px;
+            padding: 30px;
+            position: relative;
+            border-radius: 10px;
+            .popup_close {
+                position: absolute;
+                cursor: pointer;
+                right: 10px;
+                top: 10px;
+                font-size: 20px;
+                color: red;
+                text-decoration: none;
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .popup_title {
+                font-size: 30px;
+                margin: 0px 0px 1em 0px;
+            }    
+        }  
+    }   
+  }
+}
+
