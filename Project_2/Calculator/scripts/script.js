@@ -73,7 +73,7 @@ calculator.addEventListener('click',function(event){
     let key = event.target.id;
     if (key === 'equal'){
         calculate();
-        output.textContent = finalResult.toFixed(9);
+        output.textContent = parseFloat(finalResult.toFixed(13));
         operator = '';
         activeOperator = false;
     } else {
@@ -85,7 +85,6 @@ calculator.addEventListener('click',function(event){
 calculator.addEventListener('click',function(event){
     if (!event.target.classList.contains('number')) return;
     if (output.textContent == '0') return;
-    if (output.textContent.length>17) return;
     let key = event.target.id;
     num = numbers[key];
     if (activeOperator){
