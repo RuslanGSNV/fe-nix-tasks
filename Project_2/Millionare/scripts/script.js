@@ -75,7 +75,7 @@ function Timer(){
 
 let friends = ['Артур', 'Іван', 'Микита', 'Генріх', 'Дмитро', 'Сергій', 'Ростислав']
 
-
+//Об'єкти з питаннями можна наповнювати не зачіпаючи іншоих частин коду (головне відповідати шаблону питань)
 let question_block1 = [
     {question:'Як називається найбільша технологічна компанія у Південній Кореї?', wrong1:'А. Xiaomi',           wrong2:'Б. Meizu',           correct:'В. Samsung',        wrong3:'Г. Huawei'},
     {question:'Який хімічний символ для срібла?',                                  wrong1:'А. Mg',               correct:'Б. Ag',             wrong2:'В. Au',              wrong3:'Г. Ca'},
@@ -108,7 +108,9 @@ question_block1.sort(shuffle);
 question_block2.sort(shuffle);
 question_block3.sort(shuffle);
 
-let questionsAll = [].concat(question_block1, question_block2, question_block3);
+let questionsAll = [].concat(question_block1[0],question_block1[1],question_block1[2],question_block1[3],question_block1[4],
+                             question_block2[0],question_block2[1],question_block2[2],question_block2[3],question_block2[4],
+                             question_block3[0],question_block3[1],question_block3[2],question_block3[3],question_block3[4],);
 
 function increseScore(){
     count++;
